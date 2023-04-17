@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>Validate Webpage</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+   
+</head>
+<body>
+    <script src="main.js"></script>
+   
+
+    <div id="leftside">
+        <img src="mypageimage.jpeg"></img> 
+        <div class="text">
+            <p> Start for free and get attractive offers today!!</p>
+        </div> 
+    </div>
+
+    <div id="rightside">  
+        <form method = "get"  name="myform" id="form1"  onsubmit="return validateForm();" action = "mypage.html">
+        <h1>Registration Form</h1>
+
+                <label for="username">Username</label>
+                <input type="text"  id="uname"  name="username"  minlength="3" maxlength="15"/><br/><br/>
+
+                <label for="pwd">Password</label>
+                <input type="password" name="pwd" id="pass"  pattern="[a-zA-Z0-9]+" /><br/><br/>
+
+                <label for="cpwd">Confirm Password</label>
+                <input type="password" name="pwd1" id="cpass" /> <br/> <br/>
+
+                <label for="dob">Date of Birth</label>
+                <input type="date"    name="dobInput" id="dobInput" /><br/><br/>
+                
+                <label for="email">Email</label>
+                <input type="email"    name="email" id="email" /><br/><br/>
+
+                <label for="mobile">Contact Number</label>
+                <input type="number" name="mobile" id="mobile" /><br/><br/>               
+
+                <label for="gender">Gender: </label>
+                <input type="radio"    name="gender" value="m"/> Male
+                <input type="radio"    name="gender" value="f"/> Female
+                <input type="radio"    name="gender" value="o"/> Other<br/><br/>
+
+                <label for="Country">Country</label>
+                <select name="Country">
+                    <option>Select Country</option>
+                    <option>Australia</option>
+                    <option>Germany</option>
+                    <option>India</option>
+                    <option>NewZealand</option>
+                    <option>Canada</option>
+                    <option>USA</option>
+                    <option>UAE</option>
+                </select><br/><br/>
+
+               
+                <button type="submit" value="click here"  name="submit">Submit</button>
+        </form> 
+    </div>
+</body>
+</html>
